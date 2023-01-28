@@ -1,0 +1,12 @@
+Penguins live in Antarctica and they are unable to use Latin alphabet or numbers. However, they are able to write strings of symbols # and @.
+Write regular expressions for:
+(a) string that contain at least one #.
+(b) string that have exactly two @'s and exactly two #'s.
+(c) string that end with @@ or ##.
+(d) string that contain at least two @'s or exactly two #'s.
+
+My Solutions:
+(a) (@|#)*#(@|#)*
+(b)  @@## | @#@# | @##@ | ##@@ | #@#@ | #@@#
+(c) (@|#)*(@@|##)
+(d) (@|#)*@@((@|#)*) | @*#@*#@*

@@ -1,0 +1,8 @@
+1) int, boolean
+2) YES
+3) NO
+4) 5
+5) LinkedList, ArrayList
+6) A compile error occurs
+7) No, because exception thrown will be Runtime exception and IDE won't detect it, neither will compiler
+8) No, 5 is an int and can only be converted implicitly into an integer, but not into a Long.
