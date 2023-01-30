@@ -15,7 +15,6 @@ public class Bistro {
             try {
                 wait();
             } catch (InterruptedException e) {
-                throw new RuntimeException("Waiting for seats has been interrupted..");
             }
         }
         seats--;
@@ -24,7 +23,6 @@ public class Bistro {
             try {
                 wait();
             } catch (InterruptedException e) {
-                throw new RuntimeException("Waiting for order has been interrupted..");
             }
         }
         order = Thread.currentThread();
@@ -52,7 +50,6 @@ public class Bistro {
                 try {
                     wait();
                 } catch (InterruptedException e) {
-                    throw new RuntimeException("Waiter: order is not null, thread has been interrupted..");
                 }
             }
             Thread temp = order;
@@ -63,7 +60,6 @@ public class Bistro {
                 try {
                     wait();
                 } catch (InterruptedException e) {
-                    throw new RuntimeException("Waiter: meal is null, thread has been interrupted..");
                 }
 
             }
