@@ -33,7 +33,7 @@ public final class Inner<T> implements Node<T>{
             else left = new Leaf<>(x);
             lsize = left.size();
         }else{
-            if(right != null) right.insert(i, x);
+            if(right != null) right = right.insert(i, x);
             else right = new Leaf<>(x);
             rsize = right.size();
         }
